@@ -17,6 +17,8 @@
 		EE4AF6511A65BAB000F60C90 /* ExpandlyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4AF6501A65BAB000F60C90 /* ExpandlyTests.m */; };
 		EE4AF6601A65BE6000F60C90 /* PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4AF65F1A65BE6000F60C90 /* PopupView.m */; };
 		EE4AF6621A65BE8300F60C90 /* PopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE4AF6611A65BE8300F60C90 /* PopupView.xib */; };
+		EE9428451A66A0B400FB8E45 /* DemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9428431A66A0B400FB8E45 /* DemoTableViewCell.m */; };
+		EE9428461A66A0B400FB8E45 /* DemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9428441A66A0B400FB8E45 /* DemoTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,9 @@
 		EE4AF65E1A65BE6000F60C90 /* PopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PopupView.h; path = Xibs/PopupView.h; sourceTree = "<group>"; };
 		EE4AF65F1A65BE6000F60C90 /* PopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PopupView.m; path = Xibs/PopupView.m; sourceTree = "<group>"; };
 		EE4AF6611A65BE8300F60C90 /* PopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PopupView.xib; path = Xibs/PopupView.xib; sourceTree = "<group>"; };
+		EE9428421A66A0B400FB8E45 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoTableViewCell.h; path = Xibs/DemoTableViewCell.h; sourceTree = "<group>"; };
+		EE9428431A66A0B400FB8E45 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoTableViewCell.m; path = Xibs/DemoTableViewCell.m; sourceTree = "<group>"; };
+		EE9428441A66A0B400FB8E45 /* DemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DemoTableViewCell.xib; path = Xibs/DemoTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +164,9 @@
 				EE4AF65E1A65BE6000F60C90 /* PopupView.h */,
 				EE4AF65F1A65BE6000F60C90 /* PopupView.m */,
 				EE4AF6611A65BE8300F60C90 /* PopupView.xib */,
+				EE9428421A66A0B400FB8E45 /* DemoTableViewCell.h */,
+				EE9428431A66A0B400FB8E45 /* DemoTableViewCell.m */,
+				EE9428441A66A0B400FB8E45 /* DemoTableViewCell.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 				EE4AF6401A65BAB000F60C90 /* Main.storyboard in Resources */,
 				EE4AF6621A65BE8300F60C90 /* PopupView.xib in Resources */,
 				EE4AF6451A65BAB000F60C90 /* LaunchScreen.xib in Resources */,
+				EE9428461A66A0B400FB8E45 /* DemoTableViewCell.xib in Resources */,
 				EE4AF6421A65BAB000F60C90 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,6 +275,7 @@
 			files = (
 				EE4AF6371A65BAB000F60C90 /* AppDelegate.m in Sources */,
 				EE4AF6341A65BAB000F60C90 /* main.m in Sources */,
+				EE9428451A66A0B400FB8E45 /* DemoTableViewCell.m in Sources */,
 				EE4AF63D1A65BAB000F60C90 /* HomeViewController.m in Sources */,
 				EE4AF63A1A65BAB000F60C90 /* Expandly.xcdatamodeld in Sources */,
 				EE4AF6601A65BE6000F60C90 /* PopupView.m in Sources */,

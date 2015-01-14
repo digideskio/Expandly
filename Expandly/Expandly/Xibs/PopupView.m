@@ -7,6 +7,7 @@
 //
 
 #import "PopupView.h"
+#import "DemoTableViewCell.h"
 
 
 //constants particular to this view
@@ -66,13 +67,15 @@ Convenience method to create a new instance of this view
 Returns no rows so that the program can be kept simple
 */
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 10;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *fakeNonFunctioningCell = [tableView dequeueReusableCellWithIdentifier:@"noIdentifierExists" forIndexPath:indexPath];
+    DemoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DemoTableViewCell" forIndexPath:indexPath];
     
-    return fakeNonFunctioningCell;
+    cell.backgroundImageView.image = [UIImage imageNamed:@"cell"];
+    
+    return cell;
 }
 
 #pragma mark - UI Utils
@@ -99,6 +102,9 @@ Lays out subview elements
     
     //set up tableview
     self.tableView.dataSource = self;
+    NSString *cellId = @"DemoTableViewCell";
+    [self.tableView registerNib:[UINib nibWithNibName:cellId bundle:nil] forCellReuseIdentifier:cellId];
+    self.tableView.contentInset = UIEdgeInsetsMake(44.0f, 0.0f, 0.0f, 0.0f);
     
     //add lines to the header and footer views
     float yLocation = self.headerView.frame.size.height;
