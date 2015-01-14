@@ -71,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EE4AF6301A65BAB000F60C90 /* Expandly */,
+				EE4AF6311A65BAB000F60C90 /* Supporting Files */,
 				EE4AF64D1A65BAB000F60C90 /* ExpandlyTests */,
 				EE4AF62F1A65BAB000F60C90 /* Products */,
 			);
@@ -92,7 +93,6 @@
 				EE4AF6361A65BAB000F60C90 /* AppDelegate.m */,
 				EE4AF65C1A65BC8F00F60C90 /* Core Data */,
 				EE4AF65B1A65BC7D00F60C90 /* Storyboards */,
-				EE4AF6311A65BAB000F60C90 /* Supporting Files */,
 				EE4AF65A1A65BC6900F60C90 /* ViewControllers */,
 				EE4AF65D1A65BE3700F60C90 /* Xibs */,
 			);
@@ -108,6 +108,7 @@
 				EE4AF6331A65BAB000F60C90 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = Expandly;
 			sourceTree = "<group>";
 		};
 		EE4AF64D1A65BAB000F60C90 /* ExpandlyTests */ = {

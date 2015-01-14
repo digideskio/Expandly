@@ -9,10 +9,6 @@
 #import "HomeViewController.h"
 #import "PopupView.h"
 
-@interface HomeViewController ()
-
-@end
-
 @implementation HomeViewController
 
 #pragma mark - VC lifecycle
