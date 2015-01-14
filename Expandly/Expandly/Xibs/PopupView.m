@@ -188,7 +188,7 @@ This bounce is achieved using a spring + damping effect
     //first size, the frame is a tad bigger than the final size
     CGRect interimLargerFrame = expandedFrame;
     
-    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.1, 1.4));
+    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.1, 1.2));
     float newX = (expandedSize.width - interimLargerFrame.size.width) /2;
     interimLargerFrame.origin.x -= newX;
     interimLargerFrame.origin.y -= 60.0f;
@@ -212,11 +212,12 @@ This bounce is achieved using a spring + damping effect
     self.tipView.frame = offset;
     
     //go to final size
-    [UIView animateWithDuration:0.9f delay:0.17f usingSpringWithDamping:0.8f initialSpringVelocity:0.8f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.4f delay:0.18f usingSpringWithDamping:0.8f initialSpringVelocity:0.9f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.frame = expandedFrame;
         self.tipView.alpha = 1.0f;
         self.tipView.frame = oldFrame;
         [self.footerView layoutIfNeeded];
+        [self.tableView layoutIfNeeded];
         
     } completion:^(BOOL finished) {
     }];
@@ -346,6 +347,8 @@ Adjusts the view based on this.
         [UIView animateWithDuration:2.5f delay:0.1f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.frame = expandedFrame;
             self.tipView.frame = newTipFrame;
+            [self.footerView layoutIfNeeded];
+
         } completion:nil];
     }
 }
