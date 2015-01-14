@@ -326,11 +326,19 @@ Adjusts the view based on this.
     expandedFrame.size.height = expandedFrame.size.height - (keyboardFrame.size.height+(padding*1.4));
     expandedFrame.origin.y += padding/2;
     
+    //calculate tipview adjust frame
+    float tipViewYAdjustment = expandedFrame.size.height - expandedFrame.origin.y;
+    CGRect newTipFrame = self.tipView.frame;
+    newTipFrame.origin.y = tipViewYAdjustment;
+    
     if (self.onScreen) {
+        
+        //when keyboard autocomplete moves, adjust the view
         self.expandedFrame = expandedFrame;
 
         [UIView animateWithDuration:2.5f delay:0.1f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.frame = expandedFrame;
+            self.tipView.frame = newTipFrame;
         } completion:nil];
     }
 }
