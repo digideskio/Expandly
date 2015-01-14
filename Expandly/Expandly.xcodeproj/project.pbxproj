@@ -458,6 +458,7 @@
 				EE4AF6561A65BAB000F60C90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE4AF6571A65BAB000F60C90 /* Build configuration list for PBXNativeTarget "ExpandlyTests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +467,7 @@
 				EE4AF6591A65BAB000F60C90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
