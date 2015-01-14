@@ -228,6 +228,7 @@ This bounce is achieved using a spring + damping effect
 - (void)layoutSubviewsToBeAnimated{
     [self.footerView layoutIfNeeded];
     [self.tableView layoutIfNeeded];
+    [self.headerView layoutIfNeeded];
 }
 
 /**
