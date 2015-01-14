@@ -216,11 +216,18 @@ This bounce is achieved using a spring + damping effect
         self.frame = expandedFrame;
         self.tipView.alpha = 1.0f;
         self.tipView.frame = oldFrame;
-        [self.footerView layoutIfNeeded];
-        [self.tableView layoutIfNeeded];
+        [self layoutSubviewsToBeAnimated];
         
     } completion:^(BOOL finished) {
     }];
+}
+
+/**
+ Animates the subviews resizing
+ */
+- (void)layoutSubviewsToBeAnimated{
+    [self.footerView layoutIfNeeded];
+    [self.tableView layoutIfNeeded];
 }
 
 /**
@@ -347,7 +354,8 @@ Adjusts the view based on this.
         [UIView animateWithDuration:2.5f delay:0.1f options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             self.frame = expandedFrame;
             self.tipView.frame = newTipFrame;
-            [self.footerView layoutIfNeeded];
+            [self layoutSubviewsToBeAnimated];
+
 
         } completion:nil];
     }
