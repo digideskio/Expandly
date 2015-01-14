@@ -188,7 +188,7 @@ This bounce is achieved using a spring + damping effect
     //first size, the frame is a tad bigger than the final size
     CGRect interimLargerFrame = expandedFrame;
     
-    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.1, 1.1));
+    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.0, 1.3));
     float newX = (expandedSize.width - interimLargerFrame.size.width) /2;
     interimLargerFrame.origin.x -= newX;
     interimLargerFrame.origin.y -= 60.0f;
@@ -213,7 +213,7 @@ This bounce is achieved using a spring + damping effect
     self.tipView.frame = offset;
     
     //go to final size
-    [UIView animateWithDuration:0.3f delay:0.16f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.35f delay:0.16f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [self.tableView reloadData];
         self.frame = expandedFrame;
         self.tipView.alpha = 1.0f;
@@ -268,6 +268,9 @@ Then removes all the helper views it built.
     self.alpha = alpha;
     
     self.smallFrame = smallFrame;
+    
+    [self layoutSubviewsToBeAnimated];
+
 }
 
 /**
