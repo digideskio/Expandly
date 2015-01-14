@@ -27,7 +27,7 @@
                             <rect key="frame" x="512" y="5" width="80" height="34"/>
                             <color key="backgroundColor" red="0.51372549019607838" green="0.51372549019607838" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="80" id="v5I-zN-LOm"/>
+                                <constraint firstAttribute="width" priority="992" constant="80" id="v5I-zN-LOm"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <state key="normal" title="Post">
