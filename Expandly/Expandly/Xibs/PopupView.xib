@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6221" systemVersion="14C94b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -91,10 +91,11 @@
                 <constraint firstAttribute="trailing" secondItem="EBR-54-JAX" secondAttribute="trailing" id="Rlm-9D-4Rk"/>
                 <constraint firstAttribute="trailing" secondItem="2Jt-cR-8gQ" secondAttribute="trailing" id="ZF7-T9-1Gf"/>
                 <constraint firstAttribute="trailing" secondItem="2pf-Wr-kHo" secondAttribute="trailing" id="gvI-jX-iDB"/>
-                <constraint firstItem="2pf-Wr-kHo" firstAttribute="top" secondItem="EBR-54-JAX" secondAttribute="bottom" id="i97-Iz-sNQ"/>
+                <constraint firstItem="2pf-Wr-kHo" firstAttribute="top" secondItem="EBR-54-JAX" secondAttribute="bottom" priority="800" id="i97-Iz-sNQ"/>
                 <constraint firstItem="2pf-Wr-kHo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iqo-8Q-Icf"/>
                 <constraint firstItem="EBR-54-JAX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pFf-Xq-o8R"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="footerView" destination="2pf-Wr-kHo" id="Fth-jC-hdL"/>
                 <outlet property="headerView" destination="2Jt-cR-8gQ" id="sJT-eV-er7"/>

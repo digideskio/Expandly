@@ -206,10 +206,11 @@ This bounce is achieved using a spring + damping effect
     self.tipView.frame = offset;
     
     //go to final size
-    [UIView animateWithDuration:0.9f delay:0.17f usingSpringWithDamping:0.6f initialSpringVelocity:0.8f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.9f delay:0.17f usingSpringWithDamping:0.8f initialSpringVelocity:0.8f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         self.frame = expandedFrame;
         self.tipView.alpha = 1.0f;
         self.tipView.frame = oldFrame;
+        [self.footerView layoutIfNeeded];
         
     } completion:^(BOOL finished) {
     }];
