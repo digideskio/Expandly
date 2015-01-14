@@ -89,7 +89,7 @@ Lays out subview elements
     //adds dark backgrounf
     [self buildBackgroundView];
     
-    //add corners to view
+    //design self
     self.layer.cornerRadius = C_CORNER_RADIUS;
     
     //design textfield
@@ -188,7 +188,7 @@ This bounce is achieved using a spring + damping effect
     //first size, the frame is a tad bigger than the final size
     CGRect interimLargerFrame = expandedFrame;
     
-    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.1, 1.2));
+    CGSize expandedSize = CGSizeApplyAffineTransform(interimLargerFrame.size, CGAffineTransformMakeScale(1.1, 1.1));
     float newX = (expandedSize.width - interimLargerFrame.size.width) /2;
     interimLargerFrame.origin.x -= newX;
     interimLargerFrame.origin.y -= 60.0f;
@@ -198,7 +198,8 @@ This bounce is achieved using a spring + damping effect
     [UIView animateWithDuration:0.15f animations:^{
         self.frame = interimLargerFrame;
         self.alpha = 1.0f;
-        
+        [self layoutSubviewsToBeAnimated];
+
     } completion:^(BOOL finished) {
         
     }];
@@ -212,14 +213,13 @@ This bounce is achieved using a spring + damping effect
     self.tipView.frame = offset;
     
     //go to final size
-    [UIView animateWithDuration:0.4f delay:0.18f usingSpringWithDamping:0.8f initialSpringVelocity:0.9f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+    [UIView animateWithDuration:0.3f delay:0.16f options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        [self.tableView reloadData];
         self.frame = expandedFrame;
         self.tipView.alpha = 1.0f;
         self.tipView.frame = oldFrame;
         [self layoutSubviewsToBeAnimated];
-        
-    } completion:^(BOOL finished) {
-    }];
+    } completion:nil];
 }
 
 /**
